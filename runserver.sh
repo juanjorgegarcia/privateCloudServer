@@ -1,2 +1,2 @@
 #!/bin/sh
-cd /home/ubuntu/privateCloudServer && npm run prod
+cd /home/ubuntu/privateCloudServer && sudo npm run prod
