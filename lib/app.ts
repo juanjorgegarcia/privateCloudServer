@@ -6,7 +6,7 @@ import * as mongoose from "mongoose";
 class App {
   public app: express.Application;
   public routePrv: Routes = new Routes();
-  public mongoUrl: string = "mongodb://localhost:27017/cloud";
+  public mongoUrl: string = `mongodb://${process.env.PORT}:27017/cloud`;
   constructor() {
     this.app = express();
     this.config();
