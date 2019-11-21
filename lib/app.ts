@@ -2,7 +2,9 @@ import * as express from "express";
 import * as bodyParser from "body-parser";
 import { Routes } from "./routes/crmRoutes";
 import * as mongoose from "mongoose";
-console.log(process.env);
+console.log("PROCESS: ENV jj", process.env);
+console.log("PROCESS: IP jj", process.env.IP);
+
 class App {
   public app: express.Application;
   public routePrv: Routes = new Routes();
