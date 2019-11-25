@@ -7,7 +7,7 @@ console.log(IP);
 class App {
   public app: express.Application;
   public routePrv: Routes = new Routes();
-  public mongoUrl: string = `mongodb://${process.env.IP}:27017/cloud`;
+  public mongoUrl: string = `mongodb://${IP}:27017/cloud`;
   constructor() {
     this.app = express();
     this.config();
